@@ -1,0 +1,18 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+1. Apa fungsi keyword 'extends' dalam deklarasi class Java?
+2. Jelaskan perbedaan antara Method Overloading (yang ada di latihan sebelumnya) dengan Method Overriding (yang ada di latihan ini)!
+3. Apa kegunaan keyword 'super' di dalam constructor subclass (Manajer)?
+4. Jika variabel di class Karyawan diubah access modifier-nya menjadi 'private', apa yang akan terjadi pada class Manajer? Bagaimana solusinya?
+5. Mengapa kita perlu menggunakan Inheritance? Apa keuntungan utamanya dibandingkan membuat dua class yang terpisah sama sekali (misal class Karyawan dan class Manajer dibuat terpisah tanpa hubungan)?
+
+Jawaban:
+1. extends digunakan untuk mewarisi attribut dan method dari class induk ke subclass.
+2. - Method overloading
+     adalah beberapa method dengan nama yang sama namun mempunyai parameter berbeda 
+   - method overriding
+     adalah beberapa method dengan nama dan parameter sama namun mempunyai isi berbeda di subclass.
+3. super digunakan untuk memanggil constructor atau method dari parent class
+4. Jika variabel di class Karyawan diubah menjadi private, maka class Manajer tidak bisa lagi mengakses nama dan gajiPokok karena private hanya bisa diakses dari dalam class itu sendiri. solusinya adalah menggunakan getter atau mengubah access modifier menjadi protected
+5. Inheritance memudahkan reuse kode, pemeliharaan, dan memungkinkan hierarki. Sehingga lebih efisien daripada membuat class terpisah tanpa hubungan.
